@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //-----------------------1)Write a program to check user eligible for a vote
+        let a = prompt("Enter your age:")
+        let age = parseInt(a)
+
+        if(age >= 18){
+            document.write('<br> Eligible for vote')
+        }else {
+            document.write('<br> Not Eligible for vote')
+        }
+        
+        //------------------------------2)write a program to check max number from two number
+        let p = parseInt(prompt("Enter value of p:"))
+        let Q = parseInt(prompt("Enter value of p:"))
+
+        if(p>q){
+            document.write('<br> P is Max...')
+        }else {
+            document.write('<br> Q is Max...')
+        }
+
+        //---------------------------3)write a program to check Number is positive, nagative or zero
+        let num = parseInt(prompt("Enter value of m:"))
+
+        if(num>0){
+            document.write('<br> Number is positive...')
+        }
+        else if(num<0){
+            document.write('<br> Number is nagative...')
+        }
+        else {
+            document.write('<br> Number is Zero...')
+        }
+
+        //---------------------------4)write a program to check max number from three number
+        let m = parseInt(prompt("Enter value of m:"))
+        let n = parseInt(prompt("Enter value of n:"))
+        let o = parseInt(prompt("Enter value of o:"))
+
+        if(m>o && m>n){
+            document.write('<br> M is Max...')
+        }
+        else if(n>o && n>m){
+            document.write('<br> N is Max...')
+        }
+        else {
+            document.write('<br> O is Max...')
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Nested for loop meance for loop ni under another for loop
+        //Star patterns
+        //1) First pattern
+        //* * * * *
+        //* * * * *
+        // * * * * *
+        // * * * * *
+        // * * * * * 
+                // for(let i=1;i<=5;i++){
+                //     for(let j=1;j<=5;j++){
+                //         document.write('* ');
+                
+                //     }
+                //     document.write('<br> ');
+                    
+                // }
+
+         //2) Second pattern
+        // 1 2 3 4 5
+        // 1 2 3 4 5
+        // 1 2 3 4 5
+        // 1 2 3 4 5
+        // 1 2 3 4 5
+
+                // for(let i=1;i<=5;i++){
+                //     for(let j=1;j<=5;j++){
+                //         document.write(' ',j);
+                
+                //     }
+                //     document.write('<br> ');
+                    
+                // }
+                
+        //3) Third pattern
+        // 1 1 1 1 1
+        // 2 2 2 2 2
+        // 3 3 3 3 3
+        // 4 4 4 4 4
+        // 5 5 5 5 5
+
+                // for(let i=1;i<=5;i++){
+                //     for(let j=1;j<=5;j++){
+                //         document.write(' ',i);
+                
+                //     }
+                //     document.write('<br> ');
+                    
+                // } 
+                
+        //4) Forth pattern
+        //J for column ||
+        //I for row  -------
+        // *
+        // * *
+        // * * * 
+        // * * * * 
+        // * * * * *
+
+                // for(let i=1;i<=5;i++){
+                //     for(let j=1;j<=5;j++){
+                //         if(j<=i){
+                //             document.write('* ');
+                            
+                //         }
+                //     }
+                //     document.write('<br> ');
+                    
+                // } 
+
+        //5) Fifth pattern
+        //J for column ||
+        //I for row  -------
+        // 1
+        // 2 2
+        // 3 3 3 
+        // 4 4 4 4 
+        // 5 5 5 5 5
+
+        // for(let i=1;i<=5;i++){
+        //             for(let j=1;j<=5;j++){
+        //                 if(j<=i){
+        //                     document.write(' ',i);
+                            
+        //                 }
+        //             }
+        //             document.write('<br> ');
+                    
+        //         } 
+
+        //6) Sixth pattern
+        //J for column ||
+        //I for row  -------
+        // 1
+        // 1 2
+        // 1 2 3 
+        // 1 2 3 4 
+        // 1 2 3 4 5
+
+        // for(let i=1;i<=5;i++){
+        //             for(let j=1;j<=5;j++){ //for (let j=1;j<=i;j++)
+        //                 if(j<=i){
+        //                     document.write(' ',j);
+                            
+        //                 }
+        //             }
+        //             document.write('<br> ');
+                    
+        //         } 
+//--------------OR------------------------
+        //7) Sixth pattern
+        //J for column ||
+        //I for row  -------
+        // 1
+        // 1 2
+        // 1 2 3 
+        // 1 2 3 4 
+        // 1 2 3 4 5
+
+        for(let i=1;i<=5;i++){
+                    for(let j=1;j<=i;j++){
+                            document.write(' ',j);
+                            
+                    }
+                    document.write('<br> ');
+                    
+                } 
+    </script>
+</body>
+</html>

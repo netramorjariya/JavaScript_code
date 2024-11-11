@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result</title>
+</head>
+<body>
+    <script>
+        //------------------------------1)write a program to generate student result
+        //Three sub marks m1,m2,m3
+        //total = m1+m2+m3
+        //per = total/3
+        //>=80 --Grade A+
+        //70-80 --Grade A
+        //60-70 -- Grade B
+        //50-60 --Grade C
+        //40-50 --Pass class
+        //<40 --Fail
+        // 1)what is JS
+        // 2)use of js
+        // 3)operators and it's types
+        // 4)what is use of if and else and elseif lader
+        // 5)different between let,ver and const variable.
+
+        let m1 = parseInt(prompt("Enter value of m1:"))
+        let m2 = parseInt(prompt("Enter value of m2:"))
+        let m3 = parseInt(prompt("Enter value of m3:"))
+
+        let total = m1 + m2 + m3
+        document.write('<br> Total of marks is:',total);
+
+        let per = total/3
+        document.write('<br> Average of marks is:',per);
+        
+        if(per >= 80){
+            document.write('<br> A+ grade...')
+        }
+        else if(per>=70 && per<=80){
+            document.write('<br> A Grade...')
+        }
+        else if(per>=60 && per<=70){
+            document.write('<br> B Grade...')
+        }
+        else if(per>=50 && per<=60){
+            document.write('<br> C Grade...')
+        }
+        else if(per>=40 && per<=50){
+            document.write('<br> Pass Class...')
+        }
+        else {
+            document.write('<br> You are Fail...')
+        }
+    </script>
+</body>
+</html>

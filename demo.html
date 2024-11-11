@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // It print output in console tab
+        console.log("heyy Hello...")
+
+        // It shows pop-up on the screen and not showing body part until you print ok button present in pop-up
+        alert("Hello Js")
+
+    </script>
+</head>
+<body>
+    <!-- Js is scripting language:- work as client side/browser based language 
+     types of js
+     i) Internal js
+     ii) External js
+    -->
+
+    <!-- Two types of  Internaljavascript
+    1) write js in head section
+    2) write js in body section
+    
+    four function are here
+   i) console log() ->It is written in head section
+   ii) alert() ->It is write in head section
+   iii) document.write() ->It is write in body section
+   iv) document.getElementById()->It is write in body section
+    -->
+
+    <div id="demo"></div>
+    <div id="text"></div>
+
+    <script>
+        //for print body part of the document
+        document.write("Welcome to tops..")
+
+        // it print in between demo teg and consider all the tags of HTMl
+        document.getElementById('demo').innerHTML = "<b>This is text...--InnerHTML</b>"
+
+        // it print as text and not consider any tegs of HTML and print all the thingd which we write between inveted coma....
+        document.getElementById('text').innerText = "<b>This is text-- innerText</b>"
+
+
+
+    </script>
+</body>
+</html>

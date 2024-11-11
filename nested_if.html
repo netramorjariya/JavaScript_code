@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested If</title>
+</head>
+<body>
+    <script>
+        // Nested if meance if else under another if else
+        // >18 and >65
+        let age = parseInt(prompt("Enter your age:"))
+        if(age>=18){
+            document.write('<br> You are eligible for vote.');
+           if(age>=65)
+            {
+                document.write('<br> You are eligible for pension.');
+                
+            } 
+        }else {
+            document.write('<br> You are not eligible for vote.');
+            
+        }
+        //Find Max number between 3 number with the use of Nested_if 
+
+        let a = parseInt(prompt("Enter value of m:"))
+        let b = parseInt(prompt("Enter value of n:"))
+        let c = parseInt(prompt("Enter value of o:"))
+
+        if(a>b){
+            if(a>c){
+                document.write('<br> A is max'); 
+            }else {
+                document.write('<br> C is max..');   
+            }
+        }else {
+            if(b<c){
+                document.write('<br> B is max..');
+                
+            }else {
+                document.write('<br> C is max.');
+                
+            }
+        }
+
+        //Find Max number between 4 number with the use of Nested_if 
+
+        let m = parseInt(prompt("Enter value of m:"))
+        let n = parseInt(prompt("Enter value of n:"))
+        let o = parseInt(prompt("Enter value of o:"))
+        let p = parseInt(prompt("Enter value of p:"))
+
+        if(m>n){
+            if(m>o){
+                if(m>p){
+                    document.write('<br> M is max..');  
+                } else {
+                    document.write('<br> P is max..');
+                }
+            }
+            else {
+            if(o>p){
+                document.write('<br> O is max..'); 
+            } else {
+                document.write('<br> P is max..');
+            }
+        }
+        }else {
+            
+        }
+        
+    </script>
+</body>
+</html>
