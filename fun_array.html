@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array is a collection of data
+        let arr=[10,20,30,40,50]
+        // document.write('<br> Array element is '+arr[0])
+        // document.write('<br> Array element is '+arr[1])
+        // document.write('<br> Array element is '+arr[2])
+        // for(let i=0;i<arr.length;i++){
+        //     document.write('<br>'+i+'position -  Element is '+arr[i])          
+        // }
+
+        //1)for..in loop print the position of the array's element
+        for(var x in arr){
+        document.write('<br> position of elements is:  '+x)    
+    }
+        //2)for..of loop print the element of array
+        document.write('<br> ');
+        for(var x of arr){
+        document.write('<br> Elements is: '+x)    
+    }
+        //3)It replace the 3rd position's element
+        document.write('<br> ');
+        arr[3] = 500
+        document.write('<br> '+arr)
+
+        //4)array push function can add the element at the end of the array
+        document.write('<br> ');
+        document.write('<br> '+arr)
+        arr.push(65)
+        document.write('<br> '+arr)
+
+        //5)array pop function can remove the element at the end of the array
+        document.write('<br> ');
+        arr.pop()
+        document.write('<br> '+arr)
+
+        //6)unshift function can add the element at the starting of the array
+        document.write('<br> ');
+        arr.unshift(111)
+        document.write('<br> '+arr)
+
+        //7)shift function can remove the element at the starting of the array
+        document.write('<br> ');
+        arr.shift()
+        document.write('<br> '+arr)
+
+        //8)splice function :- you can add and remove data with their position
+        document.write('<br> ');
+        arr.splice(3,2,22,33,44,55,66,77,88)
+        document.write('<br> Splice is: '+arr)
+        let new_arr = arr.slice(4,8)
+        document.write('<br> '+new_arr)
+
+        //9)Sort():- it does shorting of element
+        document.write('<br> ');
+        let strarr = ["xyz","abc","fgh","zxs","pqr"]
+        document.write('<br> Array is '+strarr)
+        document.write('<br> Array is '+strarr.sort())
+        document.write('<br> Array is '+strarr.reverse())
+
+        //10)
+        //set element in assending order
+        document.write('<br> ');
+        let num_arr = [23,34,45,4,2,7,67,78,90]
+        document.write('<br> Array is '+num_arr.sort(function(a,b){
+            return a-b
+        }))
+
+        document.write('<br> '+num_arr.reverse())
+
+        //set element in desending order
+        document.write('<br> ');
+         num_arr = [23,34,45,4,2,7,67,78,90]
+        document.write('<br> Array is '+num_arr.sort(function(a,b){
+            return b-a
+        }))
+
+        //11) Reverce function:- It convert the string in desending order
+        document.write('<br> '+num_arr.reverse())
+    </script>
+
+    
+
+<script>
+
+
+
+
+
+    </script>
+
+</body>
+</html>

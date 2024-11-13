@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //fore type(method) Of User define function
+        //1)-------------TNRN :-Take Nothing Return Nothing
+
+        function add(){ //function creation
+
+            //function declaration
+            let a = 10
+            let b = 20
+            let c = a + b
+            document.write('<br> Addition is: ',c);
+            
+        }
+        add() //function calling
+
+        //2)-------------TSRN :-Take Something Return Nothing
+        function sub(a,b)//take something
+        {
+            document.write('<br> Subtraction id: ',a-b);
+            
+        }
+        sub(20,10)
+
+        //3)-------------TNRS :-Take Nothing Return Something
+        function mult()
+        {
+            let p = 12
+            let q = 5
+            return p*q
+        }
+        document.write('<br> Multiplication is: ',mult());
+        
+        // let ans = mult()
+        // document.write('<br> Multiplication is: ',ans);
+
+        //4)-------------TSRS :-Take Something Return Something
+        function cube(r)
+        {
+            return r**2
+        }
+        document.write('<br> Cube is: ',cube(4));
+        
+    </script>
+</body>
+</html>
