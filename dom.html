@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <input type="text" name="username" id="username" value="Test">
+
+    <div id="demo">Hello</div>
+
+    <p class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, architecto facere minus officia excepturi soluta rem dignissimos voluptatum quibusdam, nesciunt id corrupti atque. Iste repellat modi dolores? Eos aliquid dolor maiores quod repellendus nemo deleniti? Corporis incidunt amet repellendus voluptas? Deserunt, velit at delectus nemo itaque eum ab commodi ipsa.
+    </p>
+    <p class="box">Hollo Hayy</p>
+    <p class="box">Hoe are you!!</p>
+    <p class="box">kvfnjn mskdid ndcndkc</p>
+    <script>
+        //DOM:-Document Object Model
+
+        //Set value in input fild
+        document.getElementById("username").value="ABCD"
+
+        //Get value in input fild
+        let a = document.getElementById("username").value
+        console.log("TaxtBox value is:",a);
+
+        //To give style using java script
+        document.getElementById("demo").style.color = "blue"
+        document.getElementById("demo").style.background = "yellowgreen"
+
+        // getElementByTagName
+        // getElementByName
+        // getElementByClassName
+
+        //let pr = document.getElementsByClassName("box")
+        //let pr = document.getElementsByTagName("p")
+        let pr = document.getElementsByName("username")
+        console.log(pr);
+
+        for(let i=0;i<pr.length;i++)
+        {
+            if((i+1)%2==0)
+            {
+                pr[i].style.color = "Brown"
+            }
+            else
+            {
+                pr[i].style.color = "Pink"
+            }
+        }
+
+    </script>
+</body>
+</html>
