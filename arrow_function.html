@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Arrow function
+
+       //1) function calling in arrow function
+        let abc = ()=> console.log("Abc123function called.."); 
+        abc()
+        
+        //2) find area with arrow function
+        const area = ()=>{
+            const pi=3.14
+            let r=2.5
+            return pi*r*r
+        }
+        document.write('<br> Area of circle is:',area()); 
+        // let a = area()
+        // document.write('<br> Area of circle is '+a)
+
+        //3)Addition with arrow function
+        const add= (a,b) => document.write('<br> Addition is '+(a+b))   
+        add(35,12)
+        
+        //4) cube with arrow function
+        const cube = a => a**3
+        document.write('<br> Cube is '+cube(5))
+       
+        
+    </script>
+</body>
+</html>
