@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //----------1)Map function
+        //It does not change in original array
+        // It will create copy of element
+        // let a = [1,2,3,4,5]
+        // let res = a.map((i)=>i*2)//each element of a is store in i)
+        // document.write('<br> Result is: ',res);
+
+        //difference between map and foreach
+        //1)map is function and foreach is loop
+        //2)map function return array and foreach do not return anything
+
+        // let a1 = [1,2,3,4,5]
+        // let res1 = a1.forEach((i)=>{
+        //     return i*2
+        // })
+        // console.log("The result is: ",res1);
+
+    //--------2) Filter function
+        //It do not generate a copy of array it do changes in original array..
+        //searching anything  
+        //It always return the answer in array format  
+        //i meance element 
+        //j meance index of element
+        // let a2 = [10,20,30,40,50,10,70] 
+        
+        // let ans = a2.filter((i)=>i==10)
+        // //let ans = arr2.filter((i)=>i==200)
+        // console.log(ans);
+        // if(ans.length > 0)
+        // {
+        //     console.log("Data Found");
+        // }
+        // else{
+        //     console.log("Data not Found!!")
+        // }
+
+    //--------3) Reduce function
+        //It use to reduce the array
+
+        // let a3 = [1,2,3,4,5,6]
+        // let res2 =  a3.reduce((total,i)=>{
+        //     console.log("Total: ",total)
+        //     console.log("I is: ",i)
+        //     return total+i //total=1 i=2 total=3 i=3
+        // })
+        // console.log("Total is: ",res2)
+
+
+         //--Initial Value:--If we gave initial value then it start counting with 125
+         //It can be array[],object{} or number like 40,50...
+
+        // let a4 = [1,2,3,4,5,6]
+        // let res3 = a4.reduce((total,i)=>{
+        //     console.log("Total: ",total)
+        //     console.log("I is: ",i)
+        //     return total+i//
+        // },125)
+        // console.log("Total is: ",res3)
+        // console.log(' ');
+     
+    //--------4) ReduceRight function
+    let a5 = [1,2,3,4]
+    let res3 =  a5.reduceRight((total,i)=>{
+            console.log("Total: ",total)
+            console.log("I is: ",i)
+            return total+i //total=1 i=2 total=3 i=3
+        })
+        console.log("Total is: ",res2)
+
+    //Find max from array with the use of reduc function
+        let arr1 = [23,34,45,5,12,66]
+        let ans1 = arr1.reduce((curr,max)=>{
+            if((curr>max)){
+                max = curr
+            }
+            return max
+            console.log("ans is: ",ans1);
+            
+        })
+    //find total repetade valu from array with the use of reduce function
+
+        let arr2 = ["xyz,pqr,mno,xyx,tuv,pqr,abc,xyz"]
+        let answer = arr2.reduce((a,b)=>{
+            if(!a[b]){
+                a[b] = 1
+            }else {
+                a[b]++
+            }
+            return a
+        },{})
+        console.log(answer);
+    
+    </script>
+</body>
+</html>

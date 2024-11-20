@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Hello</p>
+        <p>ncjdncjd nckdnkn</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, corrupti officiis numquam sint excepturi non aperiam laboriosam. Voluptatem dolorum provident non earum consequatur cupiditate quam aperiam doloremque minus. Eaque laborum dolor quisquam quis quae tenetur iusto labore fuga minus esse!</p>
+    </div>
+
+    <div>
+        <p>Hyy Hello</p>
+    </div>
+
+    <script>
+        //Quary Selector :- It only select first tag from body.
+        let a = document.querySelector("p")
+        document.querySelector("p").style.color = "red"
+
+    //Quary SelectorAll :- It select all the tags from body
+    //like..In this practil it shows 4 p tag in output
+
+    let b = document.querySelectorAll("p")
+        for(let i of b){
+            i.style.color = "blue"
+        }
+        for(let i=0;i<b.length;i++){
+            b[i].style.color = "blue"
+        }
+        
+    </script>
+</body>
+</html>
