@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- "This" key word:- is use to point or get current value current object  -->
+<select name="order" id="order" onchange="shortdata(this)">
+    <option value="">--select order--</option>
+    <option value="asc">Assending order</option>
+    <option value="desc">Decending order</option>
+</select>
+<br><br><br><br>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody id="alluser"></tbody>
+    </table>
+
+    <script>
+        let a = 10 //variable
+        let b = [12,20,34]//array
+
+    //------------------In Object Data always stores in key-value formate.
+        let obj = {
+            "Name":"Netra",
+            "Age":19,
+            "Salary":25000
+        }
+    //-------Methods to get this object
+         //1)console.log("Name is: ",obj['name']);--It is mannualy
+         //2)console.log("Age is: ",obj.age);--It is mannualy
+         
+         //If you have many data so you can use 3rd method which is forin loop
+
+         //for in loop
+            for(var x in obj){
+                document.write('<br> ',x,'is ',obj[x]);
+                
+            }
+    //--------------Array of object
+    let user = [
+            {
+                "id":101,
+                "name":"Test",
+                "age":26
+            },
+            {
+                "id":102,
+                "name":"Abc",
+                "age":24
+            },
+            {
+                "id":103,
+                "name":"Pqr",
+                "age":28
+            },
+            {
+                "id":104,
+                "name":"Afdgdg",
+                "age":18
+            },
+            {
+                "id":105,
+                "name":"pqrt",
+                "age":24
+            }
+        ]
+        let newuser = user.map((i)=>{
+                return i
+        })
+        let res = user.map((i)=>{
+            //template literal
+            txt += `<tr>
+                        <td>${i.id}</td>
+                        <td>${i.name}</td>
+                        <td>${i.age}</td>
+                    </tr>`
+            // txt += "<tr>"
+            // txt += "<td>"+i.id+"</td>"
+            // txt += "<td>"+i.name+"</td>"
+            // txt += "<td>"+i.age+"</td>"
+            // txt +="</tr>"            
+        })
+        document.getElementById("alluser").innerHTML = txt
+
+         //short data
+         const shortdata = (a)=>{
+           let order =  a.value;
+            if(order=="asc"){
+                user.sort((a,b)=>{
+                return a.age - b.age
+           })
+            }else if(order=="desc"){
+                user.sort((a,b)=>{
+                return b.age - a.age
+           })
+            }
+            else {
+                
+            }
+  
+         }
+//Assending Order
+        //     document.write('<br> ',user[age].sort(function(a,b){
+        //     return a-b
+        // })); 
+
+
+        // create a table including id,name,age  using array of object in js and then when we click on assending order button it convert the age in assending order and when we click on desending order it convert the age in desending order in java script
+    </script>
+</body>
+</html>

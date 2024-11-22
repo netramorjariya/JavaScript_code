@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spreading,mearging and destructuring</title>
+</head>
+<body>
+    <script>
+    //---------Spread Operator:-Use to concate all the array element
+        //... it's a spread operator
+        const arr = ["mdmld","dfdf","dfdfdfd","jfhhdfhs","mdvmdvm"]
+        const arr2 = ["dfdfd","cxvxv"]
+        const newarr = [...arr,...arr2]//merging of two array
+        console.log(newarr);
+        const newarr2 = [arr + "," + arr2]
+        console.log(newarr2);
+      
+    //---------------Rest of Operator:- Use to concate the remaining value from array..()
+    const [x,y,c,...z] = arr
+    console.log("X is: ",x);
+    console.log("Y is: ",y);
+    console.log("C is: ",c);
+    console.log("Remaining values are: ",z);
+    
+    //Destructuring in object.....
+
+    
+        
+    </script>
+</body>
+</html>
