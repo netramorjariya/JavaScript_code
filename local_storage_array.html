@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //for convert the output in string formate use JSON.stringify()
+        //for convert string formate in to original formate use JSON.parse()
+        let user = [
+        {   id: 101, 
+            name: "Netra", 
+            age: 15 
+        },
+        { id: 102, name: "Mansi", age: 22 },
+        { id: 103, name: "Zinkal", age: 30 },
+        { id: 104, name: "Vishva", age: 20 }
+        ]
+        localStorage.setItem("userInfo",JSON.stringify(user))
+
+        let a = JSON.parse(localStorage.getItem("userInfo"))
+        console.log(a);
+        
+    </script>
+</body>
+</html>

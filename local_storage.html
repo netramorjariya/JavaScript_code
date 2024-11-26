@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <button onclick="delAge()">Clear Age</button>
+    <button onclick="delAll()">Clear All</button>
+    <script>
+        // If we need to store temp. data use local storage..
+        //For seee the out put:- Go in inspect then go in application and then go in local storage.....
+        //localStorage.setItem :- For set values in local storage
+        //localStorage.getItem :- For get stored item in browser
+        //localStorage.removeIte :- For removing any perticular value
+        //localStorage.clear() :- For remove all data from local storage
+        localStorage.setItem("Name","Netra")
+        localStorage.setItem("Age","19")
+        localStorage.setItem("Salary",25000)
+
+        let a = localStorage.getItem("Name")
+        document.getElementById("demo").innerHTML = "Name is "+a
+
+        const delAge = ()=>{
+            localStorage.removeItem("Age")
+        }
+
+        const delAll = ()=>{
+            localStorage.clear()
+        }
+    </script>
+</body>
+</html>

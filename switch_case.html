@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Switch case -->
+     <!-- Else is lader -->
+      <!-- We nedd to enter chioce from users.. -->
+
+      <script>
+        let choice = parseInt(prompt("Enter chioce:"))
+        if(choice >=1 && choice <= 4){
+        let a = parseInt(prompt("Enter value of A: "))
+        let b = parseInt(prompt("Enter value of B: "))
+        } 
+        let c;
+
+        switch(choice){
+            case 1: c=a+b
+                document.write('<br> Addition is: ',c);
+                break
+
+            case 2: c=a-b
+                document.write('<br> Minus is: ',c);
+                break
+
+            case 3: c=a*b
+                document.write('<br> Multiplication is: ',c);
+                break
+
+            case 4: c=a/b
+                document.write('<br> Division is: ',c);
+                break
+
+            default: document.write('<br> Invelid Input.....');
+                break
+            
+                
+        }
+
+      </script>
+</body>
+</html>
