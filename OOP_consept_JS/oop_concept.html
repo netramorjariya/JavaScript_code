@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //OOP stands for object oriented programing
+
+        //There are 4 principles of oop
+        //1)class and object
+        //2)Abstraction and enscapsulation
+        //3)inheritence
+        //4)Polymorphism
+
+        class emp{
+            //member variable
+            //member function
+            //current value -this key work
+            //object is an instance of class, use to display all members and function
+
+    //----------------------1)Deafult constructor
+    //----------------------2)Parameter constructor
+            //constructor automatically called when object is created
+            //It is a special member function
+            constructor(){ 
+                console.log('constuctor called...');
+                this.a=25
+                this.b=35
+                
+            }
+            add(){
+                document.write('<br> addition is..',(this.a + this.b));
+                
+            }
+        }
+        let obj = new emp();
+        obj.add();
+    </script>
+</body>
+</html>

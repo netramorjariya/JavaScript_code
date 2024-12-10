@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     class user{
+    //         constructor(p,q){
+    //             this.a = p
+    //             this.b = q
+    //         }
+    //         mult(){
+    //             return this.a * this.b
+    //         }
+    //     }
+    //     let obj = new user(10,30)
+    //    document.write('<br> Multiplication is...',obj.mult())
+
+
+//----------------------Create a class employee whosre member are name,age,salary and then display it......
+
+       class user1{
+        constructor(){
+            this.name="Netra"
+            this.age=24
+            this.salary=25000
+        }
+        display(){
+                document.write('<br> Name is: ',this.name);
+                document.write('<br> Age is: ',this.age);
+                document.write('<br> Salary is: ',this.salary); 
+            }
+       }
+       let obj = new user1();
+       obj.display()
+       
+document.write('<br> ');
+document.write('<br> ');
+
+
+       class employee{
+            constructor(name,age,salary){
+                this.a=name
+                this.b=age
+                this.c=salary
+            }
+            disp(){
+                document.write(`Name:${this.a}<br> Age:${this.b}<br> Salary:${this.c}`);
+                
+            }
+       }
+       let obj1 = new employee("Netra",20,25000);
+        obj1.disp()
+
+       
+    </script>
+</body>
+</html>

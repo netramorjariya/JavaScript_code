@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Inheritence
+        //Inheritence meance reuseability of code
+        class parent{
+            constructor(){//parentclass , baseclass , superclass
+                console.log(' parent class constructor called...');
+                
+            }
+            display(){
+                console.log(' display function called..');
+                
+            }
+        }
+        class child extends parent{//childclass , derivedclass , subclass
+            constructor(){
+                super()//first it called parent class constructor and then if called child class constructor.
+                console.log(' child class constructor called...');
+                
+            }
+            subdisplay(){
+                console.log(' Subdisplay function called..');
+                
+            }
+        }
+        let obj = new child()
+        obj.display()
+        obj.subdisplay()
+    </script>
+</body>
+</html>
