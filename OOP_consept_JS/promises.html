@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Three terms of promises 
+        //1)pending :- promise is pending
+        //2)resolve :- fulfill the promise
+        //3)reject :- not filfill the promise
+        
+        let pr = new Promise((rs,rj)=>{
+            rj('promise is rejected')
+            rs('Promise completed') 
+        }).then((msg)=>console.log(msg))
+
+
+        //for handling any error use try and cach block)
+        .catch((msg)=>console.log(msg))
+
+        let pr1 = new Promise((res,rj)=>{
+            let age = 18 
+            if(age>=18){
+                res("Eligible for vote...")
+            }
+            else {
+                rj("Not eligible for vote..")
+            }
+        }).then((msg)=>console.log(msg))
+        .catch((msg)=>console.log(msg))
+
+    </script>
+</body>
+</html>

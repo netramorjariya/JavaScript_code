@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //callback function:- we pass a function as a argument
+        //Nested function :- call 2nd function in 1st function
+
+        const add = (a,b) => {
+            document.write('<br> Addition is: ',(a+b));
+            minus(a,b)
+            
+        }
+        const minus = (p,q)=>{
+            document.write('<br> Minus is: ',(p-q));
+            multiplication(p,q)
+            
+        }
+        const multiplication=(p,q)=>{
+            document.write('<br> Multiplication is: ',(p*q));
+            division(p,q)
+            
+        }
+        const division=(p,q)=>{
+            document.write('<br> Division is: ',(p/q));
+            
+        }
+        add(25,5)
+        //callback hall meance it is a problem(code is always run in syncronance way)
+        //Solution of callback hall is :- promises and async-await
+    </script>
+</body>
+</html>
